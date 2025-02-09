@@ -1,0 +1,655 @@
+[
+  {
+    "question": "Quelles phrases suivantes sont exactes à propos de la notion de serveur ?",
+    "choix": [
+      "Un serveur est lancé à chaque fois qu'on fait appel à lui",
+      "Un serveur est nécessairement connecté à un port réseau",
+      "Il ne peut y avoir qu'un seul serveur d'un type donné (par exemple un serveur Web) sur une machine"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelles phrases suivantes sont exactes à propos de Docker ?",
+    "choix": [
+      "La machine Docker est un serveur",
+      "La machine Docker est un client",
+      "La machine Docker s'exécute dans un conteneur",
+      "La machine Docker s'exécute dans un système hôte"
+    ],
+    "reponse": 4
+  },
+  {
+    "question": "Après avoir installé un serveur dans un conteneur Docker, que reste-t-il à faire ?",
+    "choix": [
+      "Il faut configurer le serveur",
+      "Il faut lancer le serveur",
+      "Il faut installer au moins un programme client dans le conteneur Docker",
+      "Il faut installer au moins un programme client sur la machine hôte"
+    ],
+    "reponse": 4
+  },
+  {
+    "question": "Voici un document structuré sérialisé en JSON: {\"A\": 1, \"A\": 1, \"A\": 1}. Ce document est-il conforme à la définition donnée?",
+    "choix": [
+      "Oui",
+      "Non car il contient des clés identiques",
+      "Non car il contient des valeurs identiques"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Voici une valeur complexe sérialisée en JSON: [\"A\": 1, \"B\": 2, \"C\": 3]. Est-elle conforme à la définition donnée?",
+    "choix": [
+      "Oui, c'est une liste de paire clés-valeurs",
+      "Non, car une liste doit être constituée de valeurs",
+      "Non car les valeurs doivent être encadrées par des apostrophes doubles"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Encore une valeur complexe sérialisée en JSON: [1, {\"X\": \"zsz\", \"Y\": \"123\"}, [98, 89, 67]]. Est-elle conforme à la définition donnée?",
+    "choix": [
+      "Oui, c'est une liste",
+      "Non, car une liste doit être constituée de valeurs de même type",
+      "Non car le dictionnaire en seconde position devrait être associé à un identifiant"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Laquelle des affirmations suivantes sur la normalisation relationnelle est-elle vraie?",
+    "choix": [
+      "Regrouper les entités liées les unes aux autres dans un même espace",
+      "Respecter les normes de codage des données en tables",
+      "Eviter les redondances sans perdre d'information"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quelle est la principale conséquence de la normalisation?",
+    "choix": [
+      "Les entités associées sont proches l'une de l'autre",
+      "Chaque entité est stockée dans un espace autonome et compact",
+      "L'information relative à chaque entité est fragmentée dans plusieurs tables"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Laquelle des affirmations suivantes sur les schémas relationnels est-elle vraie?",
+    "choix": [
+      "Il garantit la régularité des représentations et le respect des contraintes",
+      "Le schéma est construit par le système au fur et à mesure des insertions",
+      "Le schéma contient les liens qui associent les entités les unes aux autres"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Laquelle des affirmations suivantes sur la modélisation par documents structurés est-elle vraie?",
+    "choix": [
+      "Elle est moins puissante mais plus efficace que la modélisation relationnelle",
+      "Elle évite la fragmentation des informations relative à une même entité",
+      "Elle rend inutile la définition d'un schéma"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Laquelle des affirmations suivantes sur les différences entre modélisation relationnelle et modélisation par documents structurés est-elle fausse?",
+    "choix": [
+      "En relationnel, toutes les entités sont sur le même plan; avec les documents structurés elles sont hiérarchisées",
+      "On peut modéliser certaines bases de données dans un modèle et pas dans l'autre, et réciproquement",
+      "Il faut plus d'écritures et de lectures en relationnel qu'en modélisation par documents structuré"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est l'impact du choix de modélisation sur les applications?",
+    "choix": [
+      "Les bases relationnelles imposent plus de complexité aux applications car les données sont très fragmentées",
+      "Les bases documentaires imposent plus de complexité aux applications à cause de l'absence de norme et de schéma",
+      "La modélisation n'impacte pas les applications"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Parmi les définitions suivantes, laquelle vous semble le mieux correspondre à la notion de ressource Web ?",
+    "choix": [
+      "C'est un document qui peut être téléchargé à une URL donnée",
+      "C'est un point de communication référencé par une URL",
+      "C'est une entité qui fournit des services à une URL donnée"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quelle est la bonne affirmation ?",
+    "choix": [
+      "HTTP est un protocole qui sert à échanger des documents HTML",
+      "HTTP est un protocole qui sert à échanger tout type de documents",
+      "HTTP ne peut être utilisé que dans le contexte du Web"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Parmi les affirmations suivantes sur REST, l'une est vraie: laquelle",
+    "choix": [
+      "Si on envoie un POST à une ressource inexistante, elle est créée",
+      "POST est idempotent: deux appels successifs donnent le même résultat",
+      "GET est idempotent: deux appels successifs à la même ressource donnent le même résultat",
+      "On peut faire plusieurs appels PUT à une même ressource",
+      "Un appel GET à une ressource renvoie toujours le même document"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quelle est la bonne affirmation",
+    "choix": [
+      "CouchDB est un serveur Web qui gère des données statiques codés en JSON",
+      "CouchDB est un système NoSQL basé sur les principes REST et le codage JSON",
+      "On ne peut communiquer avec CouchDB que via un navigateur ou cUrl"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Parmi les arguments ci-dessous, lequel vous semble faux pour distinguer un moteur de stockage NoSQL d'un moteur de recherche comme Elastic Search ?",
+    "choix": [
+      "Les mises à jour du contenu ou du schéma sont plus difficiles avec un moteur de recherche à cause de la compression des listes inversées",
+      "On ne peut pas faire de recherche structurée avec un moteur de recherche",
+      "Un moteur de recherche étant conçu comme une structure secondaire, il n'offre pas la même sécurité de stockage"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelles sont les conséquences techniques d'une architecture comme celle de la Figure 20",
+    "choix": [
+      "Il faut reconstruire l'index du moteur de recherche tous les soirs",
+      "Il faut synchroniser toute mise à jour du moteur de stockage vers l'index",
+      "Il faut synchroniser toute mise à jour de l'index vers le moteur de stockage"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Cherchez l'erreur! Quelle propriété parmi les suivantes ne vous semble pas s'appliquer à la recherche d'information?",
+    "choix": [
+      "On évalue la proximité entre le besoin exprimé et les documents du système",
+      "On cherche des documents de structure similaire à celui donné par la requête",
+      "On cherche des documents de contenu similaire à celui donné par la requête",
+      "On cherche les paires de documents proches les uns des autres"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est le rappel si la recherche ramène tous les documents?",
+    "choix": [
+      "Le rappel est maximal, donc 1",
+      "Le rappel est minimal, donc 0",
+      "Le rappel est le rapport entre le nombre de documents pertinents et la taille de la collection"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quelle est la précision si la recherche ramène tous les documents?",
+    "choix": [
+      "La précision est maximale, donc 1",
+      "La précision est minimale, donc 0",
+      "La précision est le rapport entre le nombre de documents pertinents et la taille de la collection"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quel est le rappel si la recherche ne ramène aucun document?",
+    "choix": [
+      "Le rappel est maximal, donc 1",
+      "Le rappel est minimal, donc 0",
+      "Le rappel est le rapport entre le nombre de documents pertinents et la taille de la collection"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle est la précision si la recherche ne ramène aucun document?",
+    "choix": [
+      "La précision est maximale, donc 1",
+      "La précision est minimale, donc 0",
+      "La précision est indéfinie"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Si je souhaite minimiser le nombre de faux positifs dans ma réponse, je dois favoriser",
+    "choix": [
+      "Le rappel",
+      "La précision",
+      "Le rapport rappel / précision",
+      "Le rapport précision / rappel"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Si je souhaite minimiser le nombre de faux négatifs dans ma réponse, je dois favoriser",
+    "choix": ["Le rappel", "La précision"],
+    "reponse": 1
+  },
+  {
+    "question": "Qu'est-ce qu'une matrice (ou un index) inversé?",
+    "choix": [
+      "C'est une structure dans laquelle on a remplacé les 0 par des 1 et réciproquement, pour faciliter les calculs",
+      "C'est une structure où les documents sont en ligne et les token en colonne",
+      "C'est une structure où les documents sont en colonne et les token en ligne"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Qu'est-ce que le répertoire dans un index inversé?",
+    "choix": [
+      "C'est l'espace où l'on stocke les listes inversées",
+      "C'est la liste des termes indexés",
+      "C'est un tableau qui associe un terme et une liste"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quel est le coût d'une recherche avec un index inversé?",
+    "choix": [
+      "Proportionnel à la taille de la collection",
+      "Proportionnel à la taille des listes correspondant aux mots cherchés",
+      "Proportionnel au nombre de termes de la requête"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Par rapport à la définition de la recherche d'information, quel énoncé ci-dessous sur la recherche booléenne vous semble correct ?",
+    "choix": [
+      "Ce n'est pas de la RI car on traite des documents structurés",
+      "Ce n'est pas de la RI car il n'y a pas d'estimation de la pertinence",
+      "Ce n'est pas de la RI car il n'y a ni faux négatif ni faux positif."
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle est l'affirmation fausse parmi celles ci-dessous",
+    "choix": [
+      "Pour un item en entrée, l'atelier de transformation produit exactement un item en sortie",
+      "Pour un item en entrée, l'atelier de transformation peut ne produire aucun item en sortie",
+      "Pour un item en entrée, l'atelier de transformation peut produire plusieurs items en sortie"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quelle est l'affirmation correcte parmi celles ci-dessous",
+    "choix": [
+      "L'atelier de transformation produit toujours en sortie des items d'une nature (d'un type) différente de ceux en entrée",
+      "L'atelier de transformation produit en sortie des items de même nature que ceux en entrée",
+      "La nature (le type) des items en sortie est indépendant de celle des items en entrée"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quand commence l'atelier d'assemblage ?",
+    "choix": [
+      "Quand l'atelier de transformation a produit assez d'items pour que ça en vaille la peine",
+      "Quand l'atelier de transformation a terminé",
+      "L'assemblage est effectué en continu"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle propriété permet de paralléliser la production ?",
+    "choix": [
+      "Aucune coordination n'est nécessaire: il suffit d'ajouter des ateliers, toujours identiques, en fonction des besoins",
+      "Chaque atelier se sert dans une corbeille d'entrée commune: on est sûr que chaque item sera traité par l'un deux",
+      "Tous les ateliers travaillent au même rythme: cela garantit que les transformations termineront en même temps"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quelle propriété permet de garantir que le processus va toujours finir ?",
+    "choix": [
+      "Si un atelier est fiable, tous le seront puisqu'ils sont tous identiques",
+      "L'échec éventuel d'un atelier n'affecte pas les autres: il suffit de recommencer la tâche locale",
+      "Chaque item en entrée est traité par plusieurs ateliers: on a la garantie presque totale que l'un deux va réussir la transformation"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle extension au processus de base permet d'effectuer des regroupements ?",
+    "choix": [
+      "Les items produits par la transformation sont placés dans des conteneurs de taille fixe: chaque conteneur correspond à un groupe",
+      "L'atelier d'assemblage analyse les items reçus et les répartit en groupe en fonction de leurs caractéristiques",
+      "Les items produits par la transformation sont étiquetés: chaque étiquette correspond à un groupe",
+      "Les items en entrée sont répartis sur les ateliers de transformation en fonction de leur type: chaque atelier produit un groupe"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quel est le rôle des ateliers d'assemblage dans le regroupement ?",
+    "choix": [
+      "Chaque atelier peut recevoir n'importe quel groupe",
+      "Chaque atelier peut recevoir des items de n'importe quel groupe, et en renvoie certains à d'autres ateliers",
+      "Chaque atelier ne reçoit que des items d'un ou plusieurs groupes déterminés"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Qu'est-ce qu'une valeur intermédiaire ?",
+    "choix": [
+      "Une valeur extraite d'un document en entrée",
+      "Une valeur produite par une fonction de Map",
+      "Une valeur conservée en mémoire entre deux appels à la fonction de Map"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Qu'est-ce qu'une paire intermédiaire ?",
+    "choix": [
+      "Une valeur intermédiaire et son étiquette (sa clé)",
+      "Une paire de valeurs intermédiaires",
+      "Une paire constituée d'un item en entrée et de sa valeur transformée"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Comment caractériser la fonction de Map ?",
+    "choix": [
+      "Elle prend en entrée un ensemble de documents et produit une paire clé-valeur",
+      "Elle prend en entrée un document et produit des paires clé-valeur",
+      "Elle prend en entrée un document et produit une valeur intermédiaire"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est l'ordre de grandeur du volume de données qui rend nécessaire le passage à un système distribué?",
+    "choix": ["Le Giga", "Le Téra", "Le Péta"],
+    "reponse": 2
+  },
+  {
+    "question": "Que désigne le terme de commodity server?",
+    "choix": [
+      "Une machine dont la mémoire et la puissance de calcul sont extensibles",
+      "Une machine propre à tous les usages, depuis l'ordinateur de bureau jusqu'au serveur",
+      "Une machine réduite aux composants principaux, ces derniers étant à bas coût"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "À quoi correspond la notion de SPOF (Single point of failure)?",
+    "choix": [
+      "Un composant dont le bon fonctionnement est nécessaire à tout le système",
+      "Un composant par lequel toutes les données doivent passer",
+      "Le composant le plus fragile du système"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Qu'est-ce que le failover? Pourquoi est-ce important dans les systèmes de type cloud?",
+    "choix": [
+      "Le failover est la capacité d'une machine à se rétablir après une panne",
+      "Le failover est la capacité d'un système à pallier la panne d'un de ses composants",
+      "Le failover est le taux de panne du système"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Parmi les arguments suivants en faveur du protocole HTTP pour la gestion de données massives, lequel vous semble le moins convaincant?",
+    "choix": [
+      "C'est un protocole normalisé implanté dans tous les langages de programmation",
+      "C'est un protocole qui échange les données de manière compacte",
+      "C'est un protocole pour lequel il existe déjà des applications clients: les navigateurs Web"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est le point faible d'une architecture Maître-esclave?",
+    "choix": [
+      "Le maître est un SPOF",
+      "Toutes les communications, y compris celles entre esclaves, doivent passer par le maître",
+      "Une application client doit connaître tous les nœuds, et savoir lequel est le maître"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Parmi les propriétés suivantes, une seule s'applique aux systèmes NoSQL. Laquelle?",
+    "choix": [
+      "Ils disposent d'un haut niveau de fonctionnalités (transactions, langage expressif)",
+      "Ils sont normalisés",
+      "Ils s'adaptent nativement à des environnements distribués"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Qu'est-ce qu'un opérateur de second ordre?",
+    "choix": [
+      "C'est un opérateur qui est appliqué à des documents par d'autres opérateurs",
+      "C'est un opérateur qui applique d'autres opérateurs à des documents",
+      "C'est un opérateur qui résulte de la composition d'opérateurs primaires"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est le rôle de l'opération de shuffle?",
+    "choix": [
+      "Distribuer les résultats des mappers vers les reducers",
+      "Distribuer les résultats des reducers vers les mappers",
+      "Distribuer les documents équitablement sur les mappers"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Que dit le principe de data locality?",
+    "choix": [
+      "Que les données doivent rester à l'intérieur d'un même système distribué",
+      "Que les données doivent être traitées là où elles sont stockées",
+      "Que les données peuvent être échangées entre mappers ou entre reducers, mais pas entre mappers et reducers"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle est la définition de la cohérence étudiée dans cette session (et désignée par C dans CAP)?",
+    "choix": [
+      "L'ordre des lectures et des écritures est préservé",
+      "Une transaction ne voit pas les mises à jour d'une autre transaction qui n'a pas validé",
+      "Toute transaction effectuant une lecture d'un document d accède à la dernière version de d"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Le modèle transactionnel des bases de données (relationnelles en particulier) s'appuie sur un ensemble de propriétés dites ACID (c'est le moment de les revoir si vous les avez oubliées). Dans le modèle transactionnel NoSQL évoqué ci-dessus, lesquelles de ces propriétés sont encore satisfaites?",
+    "choix": ["Toutes", "Aucune", "La cohérence et la durabilité"],
+    "reponse": 3
+  },
+  {
+    "question": "Reprenons les paramètres W, R et RF pour le paramétrage des opérations synchrones. Quel est l'intérêt de choisir le quorum pour W et R?",
+    "choix": [
+      "C'est le paramétrage qui garantit que W+R est minimale",
+      "C'est le paramétrage qui permet de s'adapter au changement du facteur de réplication RF",
+      "C'est le paramétrage qui garantit les meilleures performances"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "À partir de combien de pannes simultanées un système distribué constitué de n nœuds ne fonctionne-t-il plus",
+    "choix": [
+      "Quand 2 nœuds tombent en panne en même temps.",
+      "Quand il il ne reste plus qu'un nombre de nœuds égal au quorum - 1",
+      "Quand il il ne reste plus qu'un nombre de nœuds égal au quorum"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Dans un système distribué maître-esclave, l'un des esclaves perd le contact avec le maitre. Que doit-il faire?",
+    "choix": [
+      "Se mettre au repos et refuser toute connexion",
+      "Tenter de contacter une majorité d'autres esclaves pour élire un nouveau maître",
+      "Elire un nouveau maître avec les esclaves avec lesquels il est encore en contact"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Un administrateur a divisé une grappe de serveurs en trois sous-ensemble égaux, répartis dans trois centres de données, dans le but d'optimiser sa sécurité. Qu'en pensez-vous?",
+    "choix": [
+      "C'est une bonne idée car au pire ils pourront fonctionner de manière indépendante",
+      "C'est une bonne idée car si une grappe devient indisponible les deux autres sont largement suffisantes pour fonctionner",
+      "Pas une bonne idée car en cas de panne réseau inter-grappes, plus rien ne fonctionne"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "À la suite d'une partition réseau, un nouveau maître est élu, mais quelques secondes plus tard l'ancien nœud maître est de nouveau connecté à la grappe; que se passe-t-il?",
+    "choix": [
+      "Ca ne devrait pas arriver car l'ancien maître aurait dû être dégradé",
+      "Il faut organiser un vote complémentaire entre les deux maîtres",
+      "Le système doit s'interrompre pour un intervention de l'administrateur"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quelle phrase est correcte?",
+    "choix": [
+      "Deux documents qui ont la même valeur pour la clé de partitionnement ne peuvent pas être dans le même fragment",
+      "Deux documents qui ont la même valeur pour la clé de partitionnement sont nécessairement dans le même fragment",
+      "Deux documents qui ont la même valeur pour la clé de partitionnement peuvent ou non être dans le même fragment selon la fonction de hachage utilisée"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Qu'est-ce qu'une bonne clé de partitionnement?",
+    "choix": [
+      "Une clé dont le nombre de valeurs possibles est k, k étant le nombre de fragments souhaités",
+      "Une clé dont le nombre de valeurs possibles est maximal",
+      "Une clé dont le nombre de valeurs possibles est une fraction de la taille de la collection",
+      "Une clé dont les valeurs sont uniformément réparties"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Je décide de partitionner ma collection de films sur le genre. Qu'en dites-vous?",
+    "choix": [
+      "Mauvais choix, car cela limite fortement le nombre de fragments possibles",
+      "Bon choix, car cela limite fortement le nombre de fragments possibles",
+      "Bon choix uniquement si on applique une fonction de hachage qui permet d'obtenir plus de fragments que de genres distincts."
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quel est le rôle d'un routeur?",
+    "choix": [
+      "Il distribue équitablement les requêtes sur tous les nœuds",
+      "Il joue le rôle de nœud primaire pour les structures de partitionnement",
+      "Il stocke la table de routage et l'utilise pour diriger les requêtes vers les nœuds concernés"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Combien peut-il y a avoir de routeurs dans un système distribué ?",
+    "choix": [
+      "Un seul",
+      "Autant qu'on veut",
+      "Un routeur primaire, et des routeurs de secours qui n'interviennent qu'en cas de panne du premier"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Dans une structure de partitionnement, quelles opérations ne sollicitent qu'un seul serveur?",
+    "choix": [
+      "Le get(i)",
+      "Les quatre requêtes get(i), put(i,d), delete(i), range(k1, k2)",
+      "Les trois requêtes get(i), put(i,d), delete(i)"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Une structure de routage indexe des fragments. Pourquoi ne pas indexer les documents eux-mêmes?",
+    "choix": [
+      "Parce que seuls les fragments ont une adresse fixe",
+      "Parce que la table de routage deviendrait trop volumineuse",
+      "Parce qu'une même requête peut concerner plusieurs documents"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Si on changeait la fonction de hachage de f(k) = k mod n à f(k) = k mod n+1, que faudrait-il faire pour que la structure reste correcte ?",
+    "choix": [
+      "Réorganiser toute la collection",
+      "Redistribuer le contenu du dernier fragment Fn, contenant les documents dont la clé k est telle que f(k) = n",
+      "Redistribuer le contenu de tous les fragments Fr, contenant les documents dont la clé k est telle que f(k) = n × r, r étant un entier"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Pourquoi choisir une valeur aussi grande (2^64) comme borne de la fonction de hachage ?",
+    "choix": [
+      "Parce que c'est exactement la taille de la mémoire virtuelle et que les 2^64 entrées de la table de routage tiennent donc en mémoire",
+      "Parce que l'on veut minimiser le risque d'une collision: deux clés différentes ayant la même valeur de hachage",
+      "Parce que l'intervalle choisi doit pouvoir contenir toutes les adresses IP envisageables, et il y en a exactement 2^64"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Où se situe la table de routage dans Cassandra?",
+    "choix": [
+      "Sur le nœud maître",
+      "Elle est répliquée sur chaque serveur",
+      "Elle est stockée sur chaque serveur responsable de la position 2^m, pour m ∈ [0, 63]"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est le principal apport du concept de RDD?",
+    "choix": [
+      "Un RDD est un fichier journal partitionné de telle sorte qu'une panne peut être réparé avec seulement un fragment du journal",
+      "Un RDD est une collection partitionnée en mémoire RAM dont chaque fragment peut être reconstruit grâce à l'historique des opérations",
+      "Un RDD est une collection partitionnée et répliquée selon les mêmes principes que MongoDB ou ElasticSearch: la reprise sur panne est assurée par la réplication"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est la différence entre RDD persistant et non persistant?",
+    "choix": [
+      "Un RDD non persistant disparaît dès que la chaîne de traitement qui l'a produit se termine",
+      "Un RDD non persistant disparaît dès que la transformation dont il est la source se termine",
+      "Les RDD persistants sont sur disque, les RDD non persistants en mémoire RAM"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle est la différence entre une transformation et une action?",
+    "choix": [
+      "Une transformation change le format des données, une action renvoie le résultat d'un calcul à l'utilisateur",
+      "Une transformation est l'équivalent d'une procédure en programmation classique, alors qu'une action est l'équivalent d'une fonction",
+      "Une transformation est une spécification intégrable à une chaîne de traitement; une action déclenche l'exécution d'une chaîne de traitement"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Comment expliqueriez-vous la notion d'exécution « paresseuse » dans Spark?",
+    "choix": [
+      "Une chaîne de traitement est constituée par spécification et ne se déclenche que quand c'est nécessaire",
+      "C'est un autre nom du principe de localité des données: chaque transformation s'applique aux données les plus proches",
+      "Le système accumule un certain volume de données avant de déclencher le traitement afin d'assurer son efficacité"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Que signifie pour un RDD la propriété d'immutabilité?",
+    "choix": [
+      "Un RDD est construit sur un cliché de la collection initiale, qui reste figé sur la durée de l'exécution du traitement",
+      "Le contenu d'un RDD ne peut pas être modifié une fois qu'il est constitué",
+      "La chaîne des RDD est solidaire, et toute modification de l'un entraîne le recalcul de tous les autres"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "En quoi le concept de sérialisation implique-t-il une différence entre les RDD et les structures plus récentes?",
+    "choix": [
+      "Aucun, dans tous les cas il faut mettre les données sur disque",
+      "Les RDD contiennent des objets java dont la sérialisation est très coûteuse, alors que les Datasets disposent de leur propre système d'écriture sur disque",
+      "Les Datasets sont plus puissants car ils s'appuient sur les objets Java, leurs méthodes, et le mécanisme natif de sérialisation"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est l'avantage d'un DataSet sur un RDD ?",
+    "choix": [
+      "Les DataSet sont toujours persistants et la reprise sur panne est donc toujours plus efficace",
+      "Les DataSets connaissent la structure de leurs données et peuvent donc optimiser les traitements qui s'y appliquent",
+      "Seuls les DataSets peuvent prendre une base relationnelle comme source de données"
+    ],
+    "reponse": 2
+  }
+]
