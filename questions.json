@@ -1,5 +1,173 @@
 [
   {
+    "question": "Cherchez l'erreur! Quelle propriété parmi les suivantes ne vous semble pas s'appliquer à la recherche d'information?",
+    "choix": [
+      "On évalue la proximité entre le besoin exprimé et les documents du système",
+      "On cherche des documents de structure similaire à celui donné par la requête",
+      "On cherche des documents de contenu similaire à celui donné par la requête",
+      "On cherche les paires de documents proches les uns des autres"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quel est le rappel si la recherche ramène tous les documents?",
+    "choix": [
+      "Le rappel est maximal, donc 1",
+      "Le rappel est minimal, donc 0",
+      "Le rappel est le rapport entre le nombre de documents pertinents et la taille de la collection"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Si je souhaite minimiser le nombre de faux positifs dans ma réponse, je dois favoriser",
+    "choix": [
+      "Le rappel",
+      "La précision",
+      "Le rapport rappel / précision",
+      "Le rapport précision / rappel"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Si je souhaite minimiser le nombre de faux négatifs dans ma réponse, je dois favoriser",
+    "choix": ["Le rappel", "La précision"],
+    "reponse": 1
+  },
+  {
+    "question": "Qu'est-ce qu'une matrice (ou un index) inversé?",
+    "choix": [
+      "C'est une structure dans laquelle on a remplacé les 0 par des 1 et réciproquement, pour faciliter les calculs",
+      "C'est une structure où les documents sont en ligne et les token en colonne",
+      "C'est une structure où les documents sont en colonne et les token en ligne"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Qu'est-ce que le répertoire dans un index inversé?",
+    "choix": [
+      "C'est l'espace où l'on stocke les listes inversées",
+      "C'est la liste des termes indexés",
+      "C'est un tableau qui associe un terme et une liste"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quel est le coût d'une recherche avec un index inversé?",
+    "choix": [
+      "Proportionnel à la taille de la collection",
+      "Proportionnel à la taille des listes correspondant aux mots cherchés",
+      "Proportionnel au nombre de termes de la requête"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Par rapport à la définition de la recherche d'information, quel énoncé ci-dessous sur la recherche booléenne vous semble correct?",
+    "choix": [
+      "Ce n'est pas de la RI car on traite des documents structurés",
+      "Ce n'est pas de la RI car il n'y a pas d'estimation de la pertinence",
+      "Ce n'est pas de la RI car il n'y a ni faux négatif ni faux positif"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Qu'est-ce que la tokenisation?",
+    "choix": [
+      "C'est l'élimination de toute ponctuation",
+      "C'est le découpage d'un texte en unités lexicales",
+      "C'est l'extraction des termes d'un dictionnaire présents dans un texte"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle opération ci-dessous ne relèvent pas de la stemmisation?",
+    "choix": [
+      "Rassembler tous les synonymes en un seul terme",
+      "Supprimer toutes les formes plurielles",
+      "Ramener tous les verbes à la forme infinitive"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quelle est la différence entre un espace métrique (EM) et un espace vectoriel (EV)?",
+    "choix": [
+      "Les données d'un EM sont ordonnées, contraitrement aux vecteurs",
+      "Il existe une fonction de distance dans un EM, et pas dans un EV",
+      "Un EV est un type particulier d'espace métrique"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Laquelle de ces propriétés n'est pas nécessaire pour une distance",
+    "choix": [
+      "La symétrie",
+      "L'inégalité triangulaire",
+      "La valeur est comprise entre 0 et 1",
+      "La distance est nulle ssi les deux objets sont les mêmes"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quelle explication de la notion de « bag of words » vous semble la bonne.",
+    "choix": [
+      "Chaque texte est représenté par un sous-ensemble de ses mots, c'est le « sac »",
+      "Le texte est considéré comme un ensemble de mots sans ordre, comme s'ils étaient dans un « sac »",
+      "Les textes sont projetés dans un espace vectoriel appelé « sac de mots »"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Pourquoi est-il plus correct de parler de distance entre les représentations des documents que de distance entre les documents eux-mêmes?",
+    "choix": [
+      "Parce qu'il peut y avoir plusieurs représentations possibles d'un même document, ce qui peut influer sur la distance",
+      "Parce que la distance naturelle entre deux documents textuels est trop coûteuse à calculer",
+      "Parce que cela permet d'appliquer une même distance à des documents multimédia quelconques: images, vidéos, etc."
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Comment est interprétée une requête q?",
+    "choix": [
+      "C'est une séquence d'opérations à appliquer à la collection",
+      "C'est une spécification de critères de recherche filtrant la collection",
+      "C'est un document de même type que ceux de la collection",
+      "C'est une sous-chaîne des documents textuels de la collection"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Qu'est-ce qui détermine le classement du résultat?",
+    "choix": [
+      "On calcule toutes les distances entre chaque paire de documents, et on trie",
+      "On calcule la distance par rapport à un document de référence: la requête",
+      "Les documents qui contiennent le plus de termes sont classés en premier"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Qu'est-ce qu'un stop word",
+    "choix": [
+      "On exclut les documents qui contiennent ce mot",
+      "C'est un mot courant qui n'informe pas sur le document",
+      "C'est un mot qui déclenche l'arrêt de la recherche quand il est rencontré"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Un document doit contenir tous les mots de la requête pour être pertinent",
+    "choix": ["Vrai", "Faux"],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle propriété de la distance euclidienne est vraie?",
+    "choix": [
+      "On ne prend en compte que les 1",
+      "On ne prend en compte que les 0",
+      "On prend en compte toutes les coordonnées des vecteurs",
+      "On prend en compte les coordonnées du vecteur décrivant la requête"
+    ],
+    "reponse": 3
+  },
+  {
     "question": "Quelles phrases suivantes sont exactes à propos de la notion de serveur ?",
     "choix": [
       "Un serveur est lancé à chaque fois qu'on fait appel à lui",
@@ -119,15 +287,6 @@
     "reponse": 3
   },
   {
-    "question": "Quelle est la bonne affirmation ?",
-    "choix": [
-      "HTTP est un protocole qui sert à échanger des documents HTML",
-      "HTTP est un protocole qui sert à échanger tout type de documents",
-      "HTTP ne peut être utilisé que dans le contexte du Web"
-    ],
-    "reponse": 2
-  },
-  {
     "question": "Parmi les affirmations suivantes sur REST, l'une est vraie: laquelle",
     "choix": [
       "Si on envoie un POST à une ressource inexistante, elle est créée",
@@ -139,15 +298,6 @@
     "reponse": 3
   },
   {
-    "question": "Quelle est la bonne affirmation",
-    "choix": [
-      "CouchDB est un serveur Web qui gère des données statiques codés en JSON",
-      "CouchDB est un système NoSQL basé sur les principes REST et le codage JSON",
-      "On ne peut communiquer avec CouchDB que via un navigateur ou cUrl"
-    ],
-    "reponse": 2
-  },
-  {
     "question": "Parmi les arguments ci-dessous, lequel vous semble faux pour distinguer un moteur de stockage NoSQL d'un moteur de recherche comme Elastic Search ?",
     "choix": [
       "Les mises à jour du contenu ou du schéma sont plus difficiles avec un moteur de recherche à cause de la compression des listes inversées",
@@ -157,7 +307,7 @@
     "reponse": 2
   },
   {
-    "question": "Quelles sont les conséquences techniques d'une architecture comme celle de la Figure 20",
+    "question": "Quelles sont les conséquences techniques d'une architecture comme celle de la Fig. 20",
     "choix": [
       "Il faut reconstruire l'index du moteur de recherche tous les soirs",
       "Il faut synchroniser toute mise à jour du moteur de stockage vers l'index",
@@ -166,32 +316,31 @@
     "reponse": 2
   },
   {
-    "question": "Cherchez l'erreur! Quelle propriété parmi les suivantes ne vous semble pas s'appliquer à la recherche d'information?",
+    "question": "Quel est le protocole d'échange avec Elastic Search",
+    "choix": ["HTTP", "Swift", "Un protocole propriétaire"],
+    "reponse": 1
+  },
+  {
+    "question": "Avec une requête de type « Query string », Elastic Search effectue la recherche",
     "choix": [
-      "On évalue la proximité entre le besoin exprimé et les documents du système",
-      "On cherche des documents de structure similaire à celui donné par la requête",
-      "On cherche des documents de contenu similaire à celui donné par la requête",
-      "On cherche les paires de documents proches les uns des autres"
+      "Dans le premier champ de type texte des documents indexés",
+      "Dans un champ de type texte défini par défaut",
+      "Dans un champ constitué de la concaténation de tous les textes d'un document"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "La recherche booléenne dans cette session est-elle identique à celle présentée en début de chapitre et basée sur les vecteurs d'incidence ?",
+    "choix": [
+      "Oui, car l'exécution repose sur les OR et AND binaires",
+      "Non, car Elastic Search peut ramener des documents même si une partie seulement des termes recherchés est présente"
     ],
     "reponse": 2
   },
   {
-    "question": "Quel est le rappel si la recherche ramène tous les documents?",
-    "choix": [
-      "Le rappel est maximal, donc 1",
-      "Le rappel est minimal, donc 0",
-      "Le rappel est le rapport entre le nombre de documents pertinents et la taille de la collection"
-    ],
+    "question": "Est-il possible de demander les documents dans lesquels un mot ne figure pas (par exemple les textes avec « loup », « cochon » mais pas « bergerie ») ?",
+    "choix": ["Oui", "Non"],
     "reponse": 1
-  },
-  {
-    "question": "Quelle est la précision si la recherche ramène tous les documents?",
-    "choix": [
-      "La précision est maximale, donc 1",
-      "La précision est minimale, donc 0",
-      "La précision est le rapport entre le nombre de documents pertinents et la taille de la collection"
-    ],
-    "reponse": 3
   },
   {
     "question": "Quel est le rappel si la recherche ne ramène aucun document?",
@@ -210,48 +359,6 @@
       "La précision est indéfinie"
     ],
     "reponse": 3
-  },
-  {
-    "question": "Si je souhaite minimiser le nombre de faux positifs dans ma réponse, je dois favoriser",
-    "choix": [
-      "Le rappel",
-      "La précision",
-      "Le rapport rappel / précision",
-      "Le rapport précision / rappel"
-    ],
-    "reponse": 2
-  },
-  {
-    "question": "Si je souhaite minimiser le nombre de faux négatifs dans ma réponse, je dois favoriser",
-    "choix": ["Le rappel", "La précision"],
-    "reponse": 1
-  },
-  {
-    "question": "Qu'est-ce qu'une matrice (ou un index) inversé?",
-    "choix": [
-      "C'est une structure dans laquelle on a remplacé les 0 par des 1 et réciproquement, pour faciliter les calculs",
-      "C'est une structure où les documents sont en ligne et les token en colonne",
-      "C'est une structure où les documents sont en colonne et les token en ligne"
-    ],
-    "reponse": 3
-  },
-  {
-    "question": "Qu'est-ce que le répertoire dans un index inversé?",
-    "choix": [
-      "C'est l'espace où l'on stocke les listes inversées",
-      "C'est la liste des termes indexés",
-      "C'est un tableau qui associe un terme et une liste"
-    ],
-    "reponse": 3
-  },
-  {
-    "question": "Quel est le coût d'une recherche avec un index inversé?",
-    "choix": [
-      "Proportionnel à la taille de la collection",
-      "Proportionnel à la taille des listes correspondant aux mots cherchés",
-      "Proportionnel au nombre de termes de la requête"
-    ],
-    "reponse": 2
   },
   {
     "question": "Par rapport à la définition de la recherche d'information, quel énoncé ci-dessous sur la recherche booléenne vous semble correct ?",
@@ -368,15 +475,6 @@
     "reponse": 3
   },
   {
-    "question": "À quoi correspond la notion de SPOF (Single point of failure)?",
-    "choix": [
-      "Un composant dont le bon fonctionnement est nécessaire à tout le système",
-      "Un composant par lequel toutes les données doivent passer",
-      "Le composant le plus fragile du système"
-    ],
-    "reponse": 1
-  },
-  {
     "question": "Qu'est-ce que le failover? Pourquoi est-ce important dans les systèmes de type cloud?",
     "choix": [
       "Le failover est la capacité d'une machine à se rétablir après une panne",
@@ -386,49 +484,13 @@
     "reponse": 2
   },
   {
-    "question": "Parmi les arguments suivants en faveur du protocole HTTP pour la gestion de données massives, lequel vous semble le moins convaincant?",
+    "question": "Où sont stockés les résultats des Mappers ?",
     "choix": [
-      "C'est un protocole normalisé implanté dans tous les langages de programmation",
-      "C'est un protocole qui échange les données de manière compacte",
-      "C'est un protocole pour lequel il existe déjà des applications clients: les navigateurs Web"
+      " Dans un système de stockage distribué pour permettre la reprise sur panne",
+      " Localement, pour favoriser la performance",
+      " Ils sont transmis aux reducers au fur et à mesure"
     ],
     "reponse": 2
-  },
-  {
-    "question": "Quel est le point faible d'une architecture Maître-esclave?",
-    "choix": [
-      "Le maître est un SPOF",
-      "Toutes les communications, y compris celles entre esclaves, doivent passer par le maître",
-      "Une application client doit connaître tous les nœuds, et savoir lequel est le maître"
-    ],
-    "reponse": 1
-  },
-  {
-    "question": "Parmi les propriétés suivantes, une seule s'applique aux systèmes NoSQL. Laquelle?",
-    "choix": [
-      "Ils disposent d'un haut niveau de fonctionnalités (transactions, langage expressif)",
-      "Ils sont normalisés",
-      "Ils s'adaptent nativement à des environnements distribués"
-    ],
-    "reponse": 3
-  },
-  {
-    "question": "Qu'est-ce qu'un opérateur de second ordre?",
-    "choix": [
-      "C'est un opérateur qui est appliqué à des documents par d'autres opérateurs",
-      "C'est un opérateur qui applique d'autres opérateurs à des documents",
-      "C'est un opérateur qui résulte de la composition d'opérateurs primaires"
-    ],
-    "reponse": 2
-  },
-  {
-    "question": "Quel est le rôle de l'opération de shuffle?",
-    "choix": [
-      "Distribuer les résultats des mappers vers les reducers",
-      "Distribuer les résultats des reducers vers les mappers",
-      "Distribuer les documents équitablement sur les mappers"
-    ],
-    "reponse": 1
   },
   {
     "question": "Que dit le principe de data locality?",
@@ -438,15 +500,6 @@
       "Que les données peuvent être échangées entre mappers ou entre reducers, mais pas entre mappers et reducers"
     ],
     "reponse": 2
-  },
-  {
-    "question": "Quelle est la définition de la cohérence étudiée dans cette session (et désignée par C dans CAP)?",
-    "choix": [
-      "L'ordre des lectures et des écritures est préservé",
-      "Une transaction ne voit pas les mises à jour d'une autre transaction qui n'a pas validé",
-      "Toute transaction effectuant une lecture d'un document d accède à la dernière version de d"
-    ],
-    "reponse": 3
   },
   {
     "question": "Le modèle transactionnel des bases de données (relationnelles en particulier) s'appuie sur un ensemble de propriétés dites ACID (c'est le moment de les revoir si vous les avez oubliées). Dans le modèle transactionnel NoSQL évoqué ci-dessus, lesquelles de ces propriétés sont encore satisfaites?",
@@ -461,6 +514,15 @@
       "C'est le paramétrage qui garantit les meilleures performances"
     ],
     "reponse": 2
+  },
+  {
+    "question": "Quel est l'intérêt d'affecter un serveur à m positions (virtuelles) sur l'anneau et pas à une seule?",
+    "choix": [
+      "Cela garantit la réplication des données du serveur, et favorise la reprise sur panne!",
+      "Cela augmente la probabilité de trouver le serveur où stocker un document, et favorise les performances en écriture",
+      "Cela multiplie par m le nombre d'intervalles, uniformise statistiquement leur taille, et tend donc à favoriser l'équilibrage"
+    ],
+    "reponse": 3
   },
   {
     "question": "À partir de combien de pannes simultanées un système distribué constitué de n nœuds ne fonctionne-t-il plus",
@@ -499,70 +561,6 @@
     "reponse": 1
   },
   {
-    "question": "Quelle phrase est correcte?",
-    "choix": [
-      "Deux documents qui ont la même valeur pour la clé de partitionnement ne peuvent pas être dans le même fragment",
-      "Deux documents qui ont la même valeur pour la clé de partitionnement sont nécessairement dans le même fragment",
-      "Deux documents qui ont la même valeur pour la clé de partitionnement peuvent ou non être dans le même fragment selon la fonction de hachage utilisée"
-    ],
-    "reponse": 2
-  },
-  {
-    "question": "Qu'est-ce qu'une bonne clé de partitionnement?",
-    "choix": [
-      "Une clé dont le nombre de valeurs possibles est k, k étant le nombre de fragments souhaités",
-      "Une clé dont le nombre de valeurs possibles est maximal",
-      "Une clé dont le nombre de valeurs possibles est une fraction de la taille de la collection",
-      "Une clé dont les valeurs sont uniformément réparties"
-    ],
-    "reponse": 2
-  },
-  {
-    "question": "Je décide de partitionner ma collection de films sur le genre. Qu'en dites-vous?",
-    "choix": [
-      "Mauvais choix, car cela limite fortement le nombre de fragments possibles",
-      "Bon choix, car cela limite fortement le nombre de fragments possibles",
-      "Bon choix uniquement si on applique une fonction de hachage qui permet d'obtenir plus de fragments que de genres distincts."
-    ],
-    "reponse": 1
-  },
-  {
-    "question": "Quel est le rôle d'un routeur?",
-    "choix": [
-      "Il distribue équitablement les requêtes sur tous les nœuds",
-      "Il joue le rôle de nœud primaire pour les structures de partitionnement",
-      "Il stocke la table de routage et l'utilise pour diriger les requêtes vers les nœuds concernés"
-    ],
-    "reponse": 3
-  },
-  {
-    "question": "Combien peut-il y a avoir de routeurs dans un système distribué ?",
-    "choix": [
-      "Un seul",
-      "Autant qu'on veut",
-      "Un routeur primaire, et des routeurs de secours qui n'interviennent qu'en cas de panne du premier"
-    ],
-    "reponse": 2
-  },
-  {
-    "question": "Dans une structure de partitionnement, quelles opérations ne sollicitent qu'un seul serveur?",
-    "choix": [
-      "Le get(i)",
-      "Les quatre requêtes get(i), put(i,d), delete(i), range(k1, k2)",
-      "Les trois requêtes get(i), put(i,d), delete(i)"
-    ],
-    "reponse": 3
-  },
-  {
-    "question": "Une structure de routage indexe des fragments. Pourquoi ne pas indexer les documents eux-mêmes?",
-    "choix": [
-      "Parce que seuls les fragments ont une adresse fixe",
-      "Parce que la table de routage deviendrait trop volumineuse",
-      "Parce qu'une même requête peut concerner plusieurs documents"
-    ],
-    "reponse": 2
-  },
-  {
     "question": "Si on changeait la fonction de hachage de f(k) = k mod n à f(k) = k mod n+1, que faudrait-il faire pour que la structure reste correcte ?",
     "choix": [
       "Réorganiser toute la collection",
@@ -577,15 +575,6 @@
       "Parce que c'est exactement la taille de la mémoire virtuelle et que les 2^64 entrées de la table de routage tiennent donc en mémoire",
       "Parce que l'on veut minimiser le risque d'une collision: deux clés différentes ayant la même valeur de hachage",
       "Parce que l'intervalle choisi doit pouvoir contenir toutes les adresses IP envisageables, et il y en a exactement 2^64"
-    ],
-    "reponse": 2
-  },
-  {
-    "question": "Où se situe la table de routage dans Cassandra?",
-    "choix": [
-      "Sur le nœud maître",
-      "Elle est répliquée sur chaque serveur",
-      "Elle est stockée sur chaque serveur responsable de la position 2^m, pour m ∈ [0, 63]"
     ],
     "reponse": 2
   },
@@ -649,6 +638,382 @@
       "Les DataSet sont toujours persistants et la reprise sur panne est donc toujours plus efficace",
       "Les DataSets connaissent la structure de leurs données et peuvent donc optimiser les traitements qui s'y appliquent",
       "Seuls les DataSets peuvent prendre une base relationnelle comme source de données"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle est la précision si la recherche ramène tous les documents?",
+    "choix": [
+      "La précision est maximale, donc 1",
+      "La précision est minimale, donc 0",
+      "La précision est le rapport entre le nombre de documents pertinents et la taille de la collection"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Pourquoi un terme est-il considéré comme important pour un document?",
+    "choix": [
+      "Parce qu'il est rare dans le document",
+      "Parce qu'il est rare dans la collection",
+      "Parce qu'il est fréquent dans la collection et rare dans le document",
+      "Parce qu'il est rare dans la collection et fréquent dans le document"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Je soumets une requête t1 t2 ... tn. Quel est le tf de chaque terme dans le vecteur représentant cette requête?",
+    "choix": ["1/n", "1", "1/√n"],
+    "reponse": 2
+  },
+  {
+    "question": "La normalisation de ce vecteur-requête est elle importante pour le classement ?",
+    "choix": [
+      "Non puisque cela revient à multiplier tous les rangs par une constante positive, et ne change donc pas l'ordre",
+      "Oui car c'est la condition pour permettre le calcul du cosinus",
+      "Non car la normalisation n'a de sens que pour les documents, pas pour la requête"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Dans la figure (voir http://b3d.bdpedia.fr/_images/euclidiandistance.png ) , qu'obtient-on en projetant un vecteur sur l'axe d'un terme t ?",
+    "choix": [
+      "La norme du vecteur multipliée par le cosinus",
+      "L'idf du terme t",
+      "Le tf du terme t",
+      "Le tf.idf du terme t"
+    ],
+    "reponse": 4
+  },
+  {
+    "question": "On exprime une requête avec un seul terme. Est-ce que l'idf du terme a une importance pour le classement?",
+    "choix": [
+      "Non puisque cela ne change pas la direction du vecteur",
+      "Oui car cela change sa norme",
+      "Non car son idf est forcément égal à 1 dans ce cas"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quel est le but de la normalisation ?",
+    "choix": [
+      "Unifier la taille des vecteurs décrivant les documents",
+      "Effacer les écarts entre les fréquences de termes dans un document",
+      "Utiliser une même représentation pour tous les documents"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Comment caractériser un mot qui n'a aucun intérêt pour une recherche?",
+    "choix": [
+      "C'est un mot dont l'idf vaut 1",
+      "C'est un mot dont l'idf vaut 0",
+      "C'est un mot qui n'apparaît que dans un seul document"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle propriété est vraie pour le calcul de la similarité cosinus entre deux documents",
+    "choix": [
+      "On doit prendre en compte toutes les coordonnées des vecteurs",
+      "On ne prend en compte que les paires de coordonnées non nulles",
+      "On ne prend en compte que les paires dont une coordonnée est non nulle",
+      "On ne prend en compte que les paires de coordonnées (0,0)"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Deux documents de même longueur contiennent tous les deux le même nombre d'occurrences d'un terme t. Que peut-on en déduire sur le classement de ces documents si je fais une recherche avec l'unique terme t?",
+    "choix": [
+      "Ils seront tous les deux classés en tête avec une valeur cosinus de 1",
+      "Leur classement sera le même, mais pas forcément en tête",
+      "Leur classement dépend, pour chacun, des co-occurrences avec d'autres termes différents de t"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Je soumets une requête composée de deux termes: t1 et t2, qui ont le même idf. Chaque document contient soit t1, soit t2, une seule fois, et jamais les deux ensemble. Quel sera le résultat?",
+    "choix": [
+      "Ils seront tous les deux classés en tête avec une valeur cosinus de 1",
+      "Leur classement sera le même, mais pas forcément en tête",
+      "Les documents sont classés selon leur taille"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "À quoi correspond la notion de SPOF (Single point of failure)?",
+    "choix": [
+      "Un composant dont le bon fonctionnement est nécessaire à tout le système",
+      "Un composant par lequel toutes les données doivent passer",
+      "Le composant le plus fragile du système"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quelle est la définition de la cohérence étudiée dans cette session (et désignée par C dans CAP)?",
+    "choix": [
+      "L’ordre des lectures et des écritures est préservé",
+      "Une transaction ne voit pas les mises à jour d’une autre transaction qui n’a pas validé",
+      "Toute transaction effectuant une lecture d’un document d accède à la dernière version de d"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Le modèle transactionnel des bases de données (relationnelles en particulier) s’appuie sur un ensemble de propriétés dites ACID (c’est le moment de les revoir si vous les avez oubliées). Dans le modèle transactionnel NoSQL évoqué ci-dessus, lesquelles de ces propriétés sont encore satisfaites?",
+    "choix": ["Toutes", "Aucune", "La cohérence et la durabilité"],
+    "reponse": 3
+  },
+  {
+    "question": "Reprenons les paramètres W, R et RF pour le paramétrage des opérations synchrones. Quel est l’intérêt de choisir le quorum pour W et R?",
+    "choix": [
+      "C’est le paramétrage qui garantit que W+R est minimale",
+      "C’est le paramétrage qui permet de s’adapter au changement du facteur de réplication RF",
+      "C’est le paramétrage qui garantit les meilleures performances"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Dans un système distribué maître-esclave, l’un des esclaves perd le contact avec le maitre. Que doit-il faire?",
+    "choix": [
+      "Se mettre au repos et refuser toute connexion",
+      "Tenter de contacter une majorité d’autres esclaves pour élire un nouveau maître",
+      "Elire un nouveau maître avec les esclaves avec lesquels il est encore en contact"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Un administrateur a divisé une grappe de serveurs en trois sous-ensemble égaux, répartis dans trois centres de données, dans le but d’optimiser sa sécurité. Qu’en pensez-vous?",
+    "choix": [
+      "C’est une bonne idée car au pire ils pourront fonctionner de manière indépendante",
+      "C’est une bonne idée car si une grappe devient indisponible les deux autres sont largement suffisantes pour fonctionner",
+      "Pas une bonne idée car en cas de panne réseau inter-grappes, plus rien ne fonctionne"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "À la suite d’une partition réseau, un nouveau maître est élu, mais quelques secondes plus tard l’ancien nœud maître est de nouveau connecté à la grappe; que se passe-t-il?",
+    "choix": [
+      "Ca ne devrait pas arriver car l’ancien maître aurait dû être dégradé",
+      "Il faut organiser un vote complémentaire entre les deux maîtres",
+      "Le système doit s’interrompre pour un intervention de l’administrateur"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quel est le niveau de cohérence dans ElasticSearch",
+    "choix": ["Cohérence faible", "Cohérence à terme", "Cohérence forte"],
+    "reponse": 2
+  },
+  {
+    "question": "Est-il possible de lire directement sur une copie secondaire sans passer par la copie primaire?",
+    "choix": ["Oui", "Non"],
+    "reponse": 1
+  },
+  {
+    "question": "Est-il possible d’écrire directement sur une copie secondaire sans passer par la copie primaire?",
+    "choix": [
+      "Oui, la copie secondaire  se coordonne ensuite avec la copie primaire",
+      "Non, toutes les écritures doivent être transmises à la copie primaire",
+      "On peut envoyer une demande d’écriture au nœud stockant la copie secondaire, mais celui-ci la transmet au nœud stockant la copie primaire qui se charge de la coordination."
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Quel est le niveau de cohérence dans Cassandra",
+    "choix": [
+      "Cohérence faible",
+      "Cohérence à terme",
+      "Le niveau de cohérence est entièrement paramétrable"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Si on choisit le niveau QUORUM pour les deux paramètres, on obtient",
+    "choix": [
+      "La cohérence faible",
+      "La cohérence à terme",
+      "la cohérence forte"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Peut-on écrire sur n’importe quel nœud avec Cassandra",
+    "choix": [
+      "Oui, Cassandra est un système multi-nœuds dans lequel chaque nœud joue le rôle de maître pour les clients avec lesquels il communique.",
+      "Non,  toute demande d’écriture est d’abord transmise au maître.",
+      "On peut demander l’écriture à n’importe quel nœud, qui joue alors le rôle de coordinateur mais n’écrit pas forcément lui-même localement"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Que diriez-vous du niveau de cohérence proposé par défaut par Mongo?",
+    "choix": ["Cohérence faible", "Cohérence à terme", "Cohérence forte"],
+    "reponse": 3
+  },
+  {
+    "question": "Plusieurs niveaux de cohérence sont-ils possibles dans MongoDB?",
+    "choix": ["Oui", "Non"],
+    "reponse": 1
+  },
+  {
+    "question": "Quel est le rôle d’un arbitre?",
+    "choix": [
+      "Il coordonne les écritures",
+      "Il permet une majorité absolue en cas de partitionnement",
+      "Il décide qui est le maître"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Quelle phrase est correcte?",
+    "choix": [
+      "Deux documents qui ont la même valeur pour la clé de partitionnement ne peuvent pas être dans le même fragment",
+      "Deux documents qui ont la même valeur pour la clé de partitionnement sont nécessairement dans le même fragment",
+      "Deux documents qui ont la même valeur pour la clé de partitionnement peuvent ou non être dans le même fragment selon la fonction de hachage utilisée"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Qu'est-ce qu'une bonne clé de partitionnement?",
+    "choix": [
+      "Une clé dont le nombre de valeurs possibles est k, k étant le nombre de fragments souhaités",
+      "Une clé dont le nombre de valeurs possibles est maximal",
+      "Une clé dont le nombre de valeurs possibles est une fraction de la taille de la collection",
+      "Une clé dont les valeurs sont uniformément réparties"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Je décide de partitionner ma collection de films sur le genre. Qu'en dites-vous?",
+    "choix": [
+      "Mauvais choix, car cela limite fortement le nombre de fragments possibles",
+      "Bon choix, car cela limite fortement le nombre de fragments possibles",
+      "Bon choix uniquement si on applique une fonction de hachage qui permet d'obtenir plus de fragments que de genres distincts"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Quel est le rôle d'un routeur?",
+    "choix": [
+      "Il distribue équitablement les requêtes sur tous les nœuds",
+      "Il joue le rôle de nœud primaire pour les structures de partitionnement",
+      "Il stocke la table de routage et l'utilise pour diriger les requêtes vers les nœuds concernés"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Dans une structure de partitionnement, quelles opérations ne sollicitent qu'un seul serveur?",
+    "choix": [
+      "Le get(i)",
+      "Les quatre requêtes get(i), put(i,d), delete(i), range(k1, k2)",
+      "Les trois requêtes get(i), put(i,d), delete(i)"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Une structure de routage indexe des fragments. Pourquoi ne pas indexer les documents eux-mêmes?",
+    "choix": [
+      "Parce que seuls les fragments ont une adresse fixe",
+      "Parce que la table de routage deviendrait trop volumineuse",
+      "Parce qu'une même requête peut concerner plusieurs documents"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Pourquoi ne pas simplement affecter un document d de clé k au serveur dont la position sur l'anneau est k mod 2^64?",
+    "choix": [
+      "Parce qu'il n'y a très probablement aucun serveur en position k mod 2^64!",
+      "Parce que cette règle d'affectation amènerait à surcharger le serveur placé en position k mod 2^64",
+      "Parce que c'est une collision qui doit être gérée en appliquant une fonction de hachage secondaire"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "La clé de ma collection de vidéos est le titre. Est-il possible de faire une recherche par année dans un système distribué?",
+    "choix": [
+      "Oui, avec la fonction get()",
+      "Non, les seules recherches possibles sont sur le titre",
+      "Oui, mais en parcourant tous les fragments de la collection"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Un même serveur peut-il gérer plusieurs fragments?",
+    "choix": [
+      "Oui, si les fragments ont des valeurs de clé connexes",
+      "Non, car le serveur ne saurait pas quel est le fragment concerné par une requête transmise par le routeur",
+      "Oui, chaque serveur peut recevoir l'identité du fragment où chercher ou bien maintenir une mini-table de routage locale pour décider du fragment concerné"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Un même serveur peut-il héberger un nœud de routage et un nœud de stockage?",
+    "choix": [
+      "Oui, un même serveur pourrait très bien héberger tous les fragments et la table de routage",
+      "Non, c'est techniquement impossible",
+      "Oui, mais il ne peut y avoir qu'un seul nœud de stockage sur un serveur pour des raisons évidentes"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Est-il nécessaire de conserver l'ordre des documents dans un fragment, même entre deux insertions?",
+    "choix": [
+      "Non, ça ne sert à rien; le tri se fait au moment de l'éclatement",
+      "Oui, sinon la table de routage ne sait pas indexer le document",
+      "Ce n'est pas nécessaire, mais ça peut être utile pour trouver un document dans un fragment avec une recherche par dichotomie"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Un éclatement ne nécessite aucun échange de messages entre les serveurs ou le routeur",
+    "choix": [
+      "Faux, il faut prévenir au moins le routeur de l'existence d'un nouvel intervalle",
+      "Vrai, même pour le routeur rien ne change",
+      "Faux, tous les autres nœuds doivent être informés du changement de la table de routage"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Tout éclatement implique l'ajout d'un nouveau serveur",
+    "choix": [
+      "Vrai, sinon on ne saurait pas où stocker le nouveau fragment",
+      "Faux, le nouveau fragment reste sur le même serveur et l'équilibrage a lieu indépendamment",
+      "Faux, sauf si tous les autres serveurs sont pleins, auquel cas on ne sait pas où placer le nouveau fragment"
+    ],
+    "reponse": 2
+  },
+  {
+    "question": "Un nœud de stockage peut-il décider de s'équilibrer avec un autre nœud de stockage sans impliquer le routeur?",
+    "choix": [
+      "Vrai, le routeur peut continuer à transférer les requêtes vers l'ancien serveur, qui se charge de transmettre",
+      "Vrai puisque la table de routage est inchangée",
+      "Faux puisque la table de routage est modifiée"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "À votre avis une application cliente peut-elle insérer directement dans un serveur de stockage sans passer par le routeur?",
+    "choix": [
+      "Non, cela supposerait que le client dispose de la table de routage qui peut rapidement devenir obsolète",
+      "Oui, il suffit qu'il ait mémorisé la table de routage au moment de la connexion",
+      "Oui, mais il faut également qu'il insère tous les réplicas"
+    ],
+    "reponse": 1
+  },
+  {
+    "question": "Pourquoi le config server et le routeur sont-ils distincts dans MongoDB?",
+    "choix": [
+      "Parce que maintenir la table de routage et rediriger les requêtes client sont des tâches lourdes",
+      "Parce qu'il faut mettre en place une structure de réplication pour la table et que ça ne peut pas se faire au niveau du routeur",
+      "Parce que l'équilibrage de charge implique l'ajout de plusieurs routeurs qui utilisent le serveur de configuration comme source centralisée pour la table de routage"
+    ],
+    "reponse": 3
+  },
+  {
+    "question": "Où se situe la table de routage dans Cassandra?",
+    "choix": [
+      "Sur le nœud maître",
+      "Elle est répliquée sur chaque serveur",
+      "Elle est stockée sur chaque serveur responsable de la position 2^m, pour m ∈ [0, 63]"
     ],
     "reponse": 2
   }
